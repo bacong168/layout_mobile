@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iot.covid.duantotnghiep">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuAnTotNghiep">
+        <activity
+            android:name=".patient.PatientInformation"
+            android:exported="false" />
+        <activity
+            android:name=".patient.PatientPersonalInformation"
+            android:exported="false" />
+        <activity
+            android:name=".patient.PatientMainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".login.Login"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Doctor.TreatmentHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.SignUpTestLayout"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.NoticeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.HeartbeatChart"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.SpO2Chart"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.TemperatureChart"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.PatientRecords"
+            android:exported="true" />
+        <activity
+            android:name=".Doctor.DoctorInformation"
+            android:exported="true" />
+        <activity
+            android:name=".Doctor.UrgentNotice"
+            android:exported="true" />
+        <activity
+            android:name=".Doctor.MainActivity"
+            android:exported="true" >
+
+        </activity>
+    </application>
+
+</manifest>
